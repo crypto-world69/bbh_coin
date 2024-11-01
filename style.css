@@ -5,12 +5,42 @@ body {
     margin: 0;
 }
 
+.bg-header {
+    background-color: #FF5733;
+}
+
+.bg-navbar {
+    background-color: #33FFBD;
+}
+
+.text-highlight {
+    color: #DBFF33;
+}
+
+.bg-menu {
+    background-color: #33FFBD;
+}
+
+.btn-menu {
+    background-color: #FF5733;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-menu:hover {
+    background-color: #DBFF33;
+    color: #1b1b2f;
+    transform: scale(1.1);
+}
+
 header {
     padding: 40px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    background-color: #f05454;
 }
 
 header h1 {
@@ -36,13 +66,13 @@ header img {
     font-size: 1.2em;
     margin: 0 10px;
     border-radius: 8px;
-    background-color: #3d84a8;
+    background-color: #444;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #ffde7d;
-    color: #1b1b2f;
+    background-color: #f0a500;
+    color: #1e1e1e;
     transform: scale(1.1);
 }
 
@@ -70,36 +100,10 @@ section p {
     line-height: 1.6;
 }
 
-section h2 {
-    color: #ffde7d;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    animation: zoomIn 1.5s ease-in-out;
-}
-
 .menu {
     text-align: center;
     padding: 40px;
-    background-color: #3d84a8;
     animation: fadeInUp 2s ease-in-out;
-}
-
-.menu a {
-    display: inline-block;
-    margin: 15px;
-    padding: 20px 50px;
-    background-color: #f05454;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.5em;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.menu a:hover {
-    background-color: #ffde7d;
-    color: #1b1b2f;
-    transform: scale(1.1);
 }
 
 @keyframes fadeIn {
@@ -115,11 +119,6 @@ section h2 {
 @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes zoomIn {
-    0% { transform: scale(0.5); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
 }
 
 @media (max-width: 768px) {
@@ -138,8 +137,8 @@ section h2 {
         font-size: 1.2em;
         line-height: 1.5;
     }
-    .menu a {
-        padding: 15px 30px;
+    .btn-menu {
+        padding: 10px 20px;
         font-size: 1.2em;
     }
 }
