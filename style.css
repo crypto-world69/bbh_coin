@@ -62,17 +62,17 @@ header img {
 .navbar-nav .nav-link {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px;
-    font-size: 1.2em;
-    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    margin: 10px;
     border-radius: 8px;
-    background-color: #444;
+    background-color: #FF5733;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #f0a500;
-    color: #1e1e1e;
+    background-color: #DBFF33;
+    color: #1b1b2f;
     transform: scale(1.1);
 }
 
@@ -138,6 +138,10 @@ section p {
         line-height: 1.5;
     }
     .btn-menu {
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+    .navbar-nav .nav-link {
         padding: 10px 20px;
         font-size: 1.2em;
     }
