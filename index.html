@@ -5,134 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beavis & Butt-Head Coin</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap">
-    <style>
-        body {
-            font-family: 'Comic Neue', cursive;
-            background-color: #2c2f33;
-            color: #ffffff;
-            margin: 0;
-        }
-        header {
-            background-color: #e00707;
-            padding: 40px;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            color: #ffffff;
-            font-size: 3em;
-            margin: 0;
-        }
-        header img {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            margin-top: 20px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 15px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 15px;
-            font-size: 1.2em;
-            margin: 0 10px;
-            border-radius: 8px;
-            background-color: #444;
-        }
-        nav a:hover {
-            background-color: #f0a500;
-            color: #1e1e1e;
-        }
-        section {
-            padding: 60px 10%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
-        section img {
-            width: 45%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 10px;
-        }
-        section p {
-            flex: 1;
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        section h2 {
-            color: #e00707;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            width: 100%;
-        }
-        .menu {
-            text-align: center;
-            padding: 40px;
-            background-color: #444;
-        }
-        .menu a {
-            display: inline-block;
-            margin: 15px;
-            padding: 20px 50px;
-            background-color: #e00707;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.5em;
-        }
-        .menu a:hover {
-            background-color: #f0a500;
-            color: #1e1e1e;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Beavis & Butt-Head Coin (BBH Coin)</h1>
-        <img src="bbh_header.jpg" alt="Beavis and Butt-Head Banner">
+    <header class="container-fluid text-center py-5 bg-danger">
+        <h1 class="text-white">Beavis & Butt-Head Coin (BBH Coin)</h1>
+        <img src="bbh_header.jpg" alt="Beavis and Butt-Head Banner" class="img-fluid mt-4">
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer">Buy Token</a>
-        <a href="https://t.me/+Qa3IoqAB1HZmZTg0" target="_blank" rel="noopener noreferrer">Telegram Group</a>
-        <a href="https://x.com/BBH_Offical" target="_blank" rel="noopener noreferrer">Twitter</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://dexscreener.com" target="_blank" rel="noopener noreferrer">Buy Token</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://t.me/+Qa3IoqAB1HZmZTg0" target="_blank" rel="noopener noreferrer">Telegram Group</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://x.com/BBH_Offical" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section>
-        <h2>What is BBH Coin?</h2>
-        <img src="bbh_coin_info.jpg" alt="Beavis and Butt-Head in Space">
-        <p>BBH Coin is inspired by the dumb, carefree, and rebellious vibe from the 90s, just like the iconic MTV duo, Beavis and Butt-Head. The goal? To bring some old-school stupidity and fun into the crypto space. No promises of "to the moon", just laughter, HODLing, and nostalgia. Heh heh, it's all about having a blast while being ridiculous.</p>
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="text-danger">What is BBH Coin?</h2>
+                <p>BBH Coin is inspired by the dumb, carefree, and rebellious vibe from the 90s, just like the iconic MTV duo, Beavis and Butt-Head. The goal? To bring some old-school stupidity and fun into the crypto space. No promises of "to the moon", just laughter, HODLing, and nostalgia. Heh heh, it's all about having a blast while being ridiculous.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="bbh_coin_info.jpg" alt="Beavis and Butt-Head in Space" class="img-fluid rounded shadow-sm" loading="lazy">
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Tokenomics</h2>
-        <img src="bbh_tokenomics.jpg" alt="Beavis and Butt-Head Crazy Background">
-        <p>
-            <strong>Blockchain:</strong> Solana - Fast and cheap, keeping things smooth and fun, just how we like it.<br>
-            <strong>Total Supply:</strong> 69,000,000,000 tokens - Because, yeah, it's funny!<br>
-            <strong>Distribution:</strong><br>
-            - 50% Community (Free Stuff! Yeah!)<br>
-            - 25% Liquidity (Keep It Flowing, Dude!)<br>
-            - 15% Marketing and Growth (Make It Go Boom!)<br>
-            - 10% Team and Development (For the Boring Stuff)
-        </p>
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="bbh_tokenomics.jpg" alt="Beavis and Butt-Head Crazy Background" class="img-fluid rounded shadow-sm" loading="lazy">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-danger">Tokenomics</h2>
+                <p>
+                    <strong>Blockchain:</strong> Solana - Fast and cheap, keeping things smooth and fun, just how we like it.<br>
+                    <strong>Total Supply:</strong> 69,000,000,000 tokens - Because, yeah, it's funny!<br>
+                    <strong>Distribution:</strong><br>
+                    - 50% Community (Free Stuff! Yeah!)<br>
+                    - 25% Liquidity (Keep It Flowing, Dude!)<br>
+                    - 15% Marketing and Growth (Make It Go Boom!)<br>
+                    - 10% Team and Development (For the Boring Stuff)
+                </p>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Community Goal</h2>
-        <img src="bbh_community.jpg" alt="Beavis and Butt-Head Rocking Out">
-        <p>We just wanna chill, share memes, and laugh. If you're into crypto and don't take things too seriously, then BBH Coin is for you. HODL and laugh, 'cause that's what it's all about. Heh heh, yeah, it's stupid... but fun! Come join the ride, it's way more fun when you're not alone.</p>
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="text-danger">Community Goal</h2>
+                <p>We just wanna chill, share memes, and laugh. If you're into crypto and don't take things too seriously, then BBH Coin is for you. HODL and laugh, 'cause that's what it's all about. Heh heh, yeah, it's stupid... but fun! Come join the ride, it's way more fun when you're not alone.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="bbh_community.jpg" alt="Beavis and Butt-Head Rocking Out" class="img-fluid rounded shadow-sm" loading="lazy">
+            </div>
+        </div>
     </section>
-    <section class="menu">
-        <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer">Buy BBH Coin</a>
-        <a href="https://t.me/+Qa3IoqAB1HZmZTg0" target="_blank" rel="noopener noreferrer">Join Telegram</a>
-        <a href="https://x.com/BBH_Offical" target="_blank" rel="noopener noreferrer">Follow on Twitter</a>
+    <section class="menu py-5 bg-dark">
+        <div class="container">
+            <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-lg mx-2 mb-3">Buy BBH Coin</a>
+            <a href="https://t.me/+Qa3IoqAB1HZmZTg0" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-lg mx-2 mb-3">Join Telegram</a>
+            <a href="https://x.com/BBH_Offical" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-lg mx-2 mb-3">Follow on Twitter</a>
+        </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
