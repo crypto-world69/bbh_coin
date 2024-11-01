@@ -9,12 +9,14 @@ header {
     padding: 40px;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 header h1 {
     color: #ffffff;
     font-size: 3em;
     margin: 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header img {
@@ -23,6 +25,7 @@ header img {
     max-height: 300px;
     object-fit: cover;
     margin-top: 20px;
+    animation: slideIn 2s ease-in-out;
 }
 
 .navbar-nav .nav-link {
@@ -33,15 +36,18 @@ header img {
     margin: 0 10px;
     border-radius: 8px;
     background-color: #444;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
     background-color: #f0a500;
     color: #1e1e1e;
+    transform: scale(1.1);
 }
 
 section {
     padding: 60px 5%;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 section img {
@@ -50,6 +56,12 @@ section img {
     border-radius: 10px;
     max-height: 350px;
     object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.05);
 }
 
 section p {
@@ -61,12 +73,14 @@ section h2 {
     color: #e00707;
     font-size: 2.5em;
     margin-bottom: 20px;
+    animation: zoomIn 1.5s ease-in-out;
 }
 
 .menu {
     text-align: center;
     padding: 40px;
     background-color: #444;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 .menu a {
@@ -78,11 +92,33 @@ section h2 {
     text-decoration: none;
     border-radius: 10px;
     font-size: 1.5em;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .menu a:hover {
     background-color: #f0a500;
     color: #1e1e1e;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 @media (max-width: 768px) {
