@@ -68,11 +68,11 @@ header img {
     border-radius: 8px;
     background-color: #FF5733;
     transition: background-color 0.3s, transform 0.3s;
-}
+ !important;}
 
 .navbar-nav .nav-link:hover {
     background-color: #DBFF33;
-    color: #1b1b2f;
+    color: #1b1b2f !important;
     transform: scale(1.1);
 }
 
