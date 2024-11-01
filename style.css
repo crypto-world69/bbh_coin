@@ -70,7 +70,7 @@ section p {
 }
 
 section h2 {
-    color: #e00707;
+    color: #f0a500;
     font-size: 2.5em;
     margin-bottom: 20px;
     animation: zoomIn 1.5s ease-in-out;
@@ -87,7 +87,7 @@ section h2 {
     display: inline-block;
     margin: 15px;
     padding: 20px 50px;
-    background-color: #e00707;
+    background-color: #f0a500;
     color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
@@ -96,7 +96,7 @@ section h2 {
 }
 
 .menu a:hover {
-    background-color: #f0a500;
+    background-color: #e00707;
     color: #1e1e1e;
     transform: scale(1.1);
 }
