@@ -1,6 +1,6 @@
 body {
     font-family: 'Comic Neue', cursive;
-    background-color: #2c2f33;
+    background-color: #1b1b2f;
     color: #ffffff;
     margin: 0;
 }
@@ -10,6 +10,7 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+    background-color: #f05454;
 }
 
 header h1 {
@@ -35,13 +36,13 @@ header img {
     font-size: 1.2em;
     margin: 0 10px;
     border-radius: 8px;
-    background-color: #444;
+    background-color: #3d84a8;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #f0a500;
-    color: #1e1e1e;
+    background-color: #ffde7d;
+    color: #1b1b2f;
     transform: scale(1.1);
 }
 
@@ -70,7 +71,7 @@ section p {
 }
 
 section h2 {
-    color: #f0a500;
+    color: #ffde7d;
     font-size: 2.5em;
     margin-bottom: 20px;
     animation: zoomIn 1.5s ease-in-out;
@@ -79,7 +80,7 @@ section h2 {
 .menu {
     text-align: center;
     padding: 40px;
-    background-color: #444;
+    background-color: #3d84a8;
     animation: fadeInUp 2s ease-in-out;
 }
 
@@ -87,7 +88,7 @@ section h2 {
     display: inline-block;
     margin: 15px;
     padding: 20px 50px;
-    background-color: #f0a500;
+    background-color: #f05454;
     color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
@@ -96,8 +97,8 @@ section h2 {
 }
 
 .menu a:hover {
-    background-color: #e00707;
-    color: #1e1e1e;
+    background-color: #ffde7d;
+    color: #1b1b2f;
     transform: scale(1.1);
 }
 
